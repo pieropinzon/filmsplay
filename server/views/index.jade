@@ -1,0 +1,65 @@
+extends ./layout.jade
+
+block post-style
+
+    link(rel="stylesheet", href="/css/index.css")
+
+block contenido
+    div(id="caja-principal")
+
+        div(class="row")    
+            section(class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12")
+                 
+                if result != ''
+
+                    div(class="col-xl-12 col-lg-12 col-sm-12 col-12")
+                        div(class="alert alert-warning alert-dismissible fade show", role="alert")
+                            button(type="button", class="close", data-dismiss="alert", aria-label="Close")
+                                span(aria-hidden="true") &times;
+                            strong #{result}
+
+                else
+
+                    div(class="row")
+                        for pelis in peliculas
+                            div(class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 caja-peli")
+                                a(href="#")
+                                    img(class="portada-peli", src="/imagenes/films/#{pelis.foto}", alt="#{pelis.titulo}")
+
+
+            aside(class="col-xl-3 col-lg-3")
+                div(class="row")
+                    div(class="col-xl-12 col-lg-12")
+                        h6 Proximamente
+                        hr        
+                        div(class="caja-prox")    
+                            for pelis in peliculas
+                                img(class="img-foto-prox img-thumbnail", src="/imagenes/films/#{pelis.foto}", alt="#{pelis.titulo}")
+                                
+                        
+                        br
+
+                    div(class="col-xl-12 col-lg-12")
+                        h6 Estrenos
+                        hr
+                        div(class="caja-prox")    
+                            for pelis in peliculas
+                                img(class="img-foto-prox img-thumbnail", src="/imagenes/films/#{pelis.foto}", alt="#{pelis.titulo}")
+                    
+                        br
+
+                    div(class="col-xl-12 col-lg-12")                                        
+                        h6 Siguenos
+                        hr
+                        div(class="caja-prox")   
+                            a(href="#") 
+                                img(class="", src="/imagenes/icons/ico-fb.png", alt="Facebook")
+                            a(href="#")
+                                img(class="", src="/imagenes/icons/icon-twt.png", alt="Twitter")
+                            a(href="#")
+                                img(class="", src="/imagenes/icons/icon-insta.jpg", alt="Intagram")                            
+                            a(href="#")
+                                img(class="", src="/imagenes/icons/icon-google.png", alt="Google")
+                            a(href="#")
+                                img(class="", src="/imagenes/icons/icon-youtube.png", alt="Youtube")                            
+                                                        

@@ -1,0 +1,67 @@
+html(lang="es")
+	head
+		title FilmsPlay 
+		meta(name="description", content="")
+		meta( name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css")
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
+		
+		
+		block post-style	
+
+		script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js") 
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js")
+
+		link(rel="stylesheet", href="/css/layout.css")
+	body
+		div(class="contenedor")
+			
+			header
+				//- barra de navegacion
+				nav(class="navbar navbar-toggleable-md navbar-light bg-faded")
+					button(class="navbar-toggler navbar-toggler-right", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+						span(class="navbar-toggler-icon")
+					a(class="navbar-brand", href="/")
+						img(src="/imagenes/icons/films 450.png", width="60", height="60", alt="FilmsPlay")
+
+					div(class="collapse navbar-collapse", id="navbarSupportedContent")
+						ul(class="navbar-nav mr-auto")
+							li(class="nav-item active")
+								a(class="nav-link", href="/") Peliculas 
+									span(class="sr-only")(current)
+							li(class="nav-item btn-group")
+								a(class="dropdown-toggle nav-link", id="categoriaDrop", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Categorias
+								div(class="dropdown-menu", aria-labelledby="categoriaDrop")
+									a(class="dropdown-item" href="/peliculas/genero/Comedia") Comedia
+									a(class="dropdown-item" href="/peliculas/genero/Suspenso") Suspenso
+									a(class="dropdown-item" href="/peliculas/genero/Drama") Drama																		
+									a(class="dropdown-item" href="/peliculas/genero/Acción") Acción																		
+									a(class="dropdown-item" href="/peliculas/genero/Aventura") Aventura																		
+									a(class="dropdown-item" href="/peliculas/genero/Romance") Romance																		
+									a(class="dropdown-item" href="/peliculas/genero/Fantasía") Fantasía																		
+									a(class="dropdown-item" href="/peliculas/genero/Infantil") Infantil																		
+									a(class="dropdown-item" href="/peliculas/genero/Ciencia Ficción") Ciencia Ficción																		
+									a(class="dropdown-item" href="/peliculas/genero/Terror") Terror																		
+
+							li(class="nav-item btn-group")
+								a(class="dropdown-toggle nav-link", id="estrenoDrop", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Estrenos
+								div(class="dropdown-menu", aria-labelledby="estrenoDrop")
+									a(class="dropdown-item" href="/peliculas/fecha/2017") 2017
+									a(class="dropdown-item" href="/peliculas/fecha/2016") 2016
+									a(class="dropdown-item" href="/peliculas/fecha/2015") 2015																		
+									a(class="dropdown-item" href="/peliculas/fecha/2014") 2014																		
+
+							li(class="nav-item")
+								a(class="nav-link", href="#") Blog
+						form(class="form-inline my-2 my-lg-0", action="/", method="GET")
+							input(class="form-control form-control-sm mr-sm-2", type="text", placeholder="Search", name="search")
+
+			block contenido
+
+			footer
+				p(class="text-center") Peliculas Online. Ver peliculas online. Descargar peliculas por enlace. #{ servidor }
+
+
+				

@@ -1,0 +1,26 @@
+<div id="caja-peli">
+	<h1>Peliculas</h1>
+
+	<p id="btn-add-peli">
+		<a routerLink="/admin/peliculas_new" class="btn btn-primary">Agregar Pelicula</a>
+	</p>
+
+	<div id="display-peli" *ngIf="isPeliculas">
+		<div class="row">
+			<div class="col-lg-3 col-md-4 margen-peli-inf" *ngFor="let pelicula of peliculas">
+				<div class="card">
+					<img class="card-img-top" src="/imagenes/films/{{pelicula.foto}}" alt="..." class="img-pelicula img-thumbnail">
+					<div class="card-block">
+						<h5 class="card-title text-center"> {{ pelicula.titulo.substr(0,23) }} </h5>
+						<div class="card-text text-right">
+							<a [routerLink]="['/admin/peliculas', pelicula._id]" class="btn-update">
+								<i class="fa fa-pencil-square-o fa-lg"></i>
+							</a>
+							<i (click)="deletePelicula(pelicula)" class="fa fa-trash fa-lg clickable"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

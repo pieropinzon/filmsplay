@@ -1,0 +1,18 @@
+#caja-auth{
+    width: 300px;
+    height: auto;
+    /*centrado tanto vertical como horizontal*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.caja-login{
+    margin-top: 60px;
+}
+
+.caja-logout{
+    margin-top: 25px;    
+}

@@ -1,0 +1,153 @@
+<form [formGroup]="form" (ngSubmit)="save()" enctype="multipart/form-data">
+
+    <div class="caja-pelicula margen-top-card">
+
+        <div class="card">
+            <div class="card-header">
+                <span>Datos de la Pelicula</span>
+            </div>
+            <div class="card-block">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="name">Titulo</label>
+                            <input [(ngModel)]="pelicula.titulo" formControlName="titulo" type="text" class="form-control form-control-sm" >  
+                            <div *ngIf="form.controls['titulo'].touched && !form.controls['titulo'].valid" class="text-danger">
+                                El Titulo es Obligatorio.
+                            </div>
+
+                            <label for="name">Año</label>
+                            <input [(ngModel)]="pelicula.age" formControlName="age" type="text" class="form-control form-control-sm" >  
+                            <div *ngIf="form.controls['age'].touched && !form.controls['age'].valid" class="text-danger">
+                                El Año es Obligatorio.
+                            </div> 
+
+                            <label for="portada">Portada</label>
+                            <input [(ngModel)]="pelicula.portada" formControlName="portada" type="file" (change)="fileChange($event)" accept=".png, .jpg, .jpeg" class="form-control form-control-sm">
+                            <div *ngIf="form.controls['portada'].touched && !form.controls['portada'].valid" class="text-danger">
+                                La Portada es Obligatoria.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="name">Audio</label>
+                            <input [(ngModel)]="pelicula.audio" formControlName="audio" type="text" class="form-control form-control-sm" >  
+                            <div *ngIf="form.controls['audio'].touched && !form.controls['audio'].valid" class="text-danger">
+                                El Audio es Obligatorio.
+                            </div>
+
+                            <label for="genero">Genero</label>
+                            <select class="custom-select form-control form-control-sm" [(ngModel)]="pelicula.genero" formControlName="genero">
+                                <option *ngFor="let genero of generos" [selected]="genero._id == idGenero" value="{{ genero._id }}">{{ genero.nombre }}</option>
+                            </select>
+                            <div *ngIf="form.controls['genero'].touched && !form.controls['genero'].valid" class="text-danger">
+                                El Genero es Obligatorio.
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="name">Calidad</label>
+                        <input [(ngModel)]="pelicula.calidad" formControlName="calidad" type="text" class="form-control form-control-sm" >  
+                        <div *ngIf="form.controls['calidad'].touched && !form.controls['calidad'].valid" class="text-danger">
+                            La Calidad es Obligatoria.
+                        </div>
+
+                        <label for="name">Puntuacion</label>
+                        <input [(ngModel)]="pelicula.puntuacion" formControlName="puntuacion" type="text" class="form-control form-control-sm" >  
+                        <div *ngIf="form.controls['puntuacion'].touched && !form.controls['puntuacion'].valid" class="text-danger">
+                            La Puntuacion es Obligatoria.
+                        </div>
+
+                        <label for="name">Director</label>
+                        <input [(ngModel)]="pelicula.director" formControlName="director" type="text" class="form-control form-control-sm" >  
+                        <div *ngIf="form.controls['director'].touched && !form.controls['director'].valid" class="text-danger">
+                            El Director es Obligatorio.
+                        </div> 
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">Descripcion</label>
+                            <textarea [(ngModel)]="pelicula.descripcion" formControlName="descripcion" class="form-control form-control-sm"></textarea>
+                            <div *ngIf="form.controls['descripcion'].touched && !form.controls['descripcion'].valid" class="text-danger">
+                                La Descripcion es Obligatoria.
+                            </div> 
+                             
+                            
+                        </div>
+                    </div>
+                        
+                    <div class="col-md-6">
+                        <div class="form-group"> 
+                             
+                            <label for="name">Elenco</label>
+                            <textarea [(ngModel)]="pelicula.elenco" formControlName="elenco" type="text" class="form-control form-control-sm"></textarea>
+                            <div *ngIf="form.controls['elenco'].touched && !form.controls['elenco'].valid" class="text-danger">
+                                El Elenco es Obligatorio.
+                            </div>
+                        </div>  
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="caja-enlace">
+      <fieldset>
+          <div class="d-flex justify-content-end">
+            <div class="mr-auto p-2"><legend class="float-left">Enlaces:</legend></div>
+            <div class="p-2"><a (click)="addArray()" style="cursor: default" class="btn btn-outline-secondary ">Add Group  +</a></div>
+          </div>
+            <div formArrayName="myArray"> 
+                <div class="row">      
+                    <div *ngFor="let myGroup of form.controls.myArray.controls; let i=index" class="col-md-4 margen-top-card">
+                        <div class="card ">
+                            <div class="card-header">
+                                <span>Enlace</span>
+                                <!--<span class="glyphicon glyphicon-remove pull-right" *ngIf="myForm.controls.addresses.controls.length > 1" (click)="removeAddress(i)"></span>-->
+                            </div>
+                            <div [formGroupName]="i" class="card-block"> 
+                                <div class="form-group">
+                                    <label>Servidor</label>
+                                    <input type="text" class="form-control form-control-sm" formControlName="servidor" >
+                                </div>
+                                <div *ngIf="form.controls.myArray.controls[i].controls.servidor.touched && 
+                                !form.controls.myArray.controls[i].controls.servidor.valid" class="text-danger">
+                                    El nombre del servidor es Obligatorio.
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Url</label>
+                                    <input type="url" class="form-control form-control-sm" formControlName="url" >
+                                </div>
+                                <div *ngIf="form.controls.myArray.controls[i].controls.url.touched && 
+                                !form.controls.myArray.controls[i].controls.url.valid" class="text-danger">
+                                    La direccion del Servidor es Obligatoria.
+                                </div>
+
+                            </div> 
+                        </div>                
+                    </div>
+                </div>        
+            </div>
+        </fieldset>
+     </div>
+  
+      <div class="float-right margen-div-btn">
+        <input type="submit" class="btn btn-primary btn-block" value="Registrar" [disabled]="!form.valid" >        
+      </div>
+
+      <!--<pre>form value: <br>{{form.value | json}}</pre>-->
+</form>  

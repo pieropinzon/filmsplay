@@ -1,0 +1,43 @@
+.contenedor-pelis{
+    /*float: left; */
+    width: 100%;
+}
+
+.panel-online{
+    width: 50%;
+    padding: 15px 15px 15px 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.online-titulo{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.online-descripcion{
+	margin: 7px 0px 9px 0px;
+}
+
+.online-opciones{
+	font-weight: bold;
+	list-style: none;
+}
+
+.online-tablecell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.online-anotacion{
+	padding-left: 6px;
+	font-weight: 100;
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+
+.descarga-panel{
+	padding: 15px 15px 5px 15px;
+	box-sizing: border-box;
+	float: right;
+}

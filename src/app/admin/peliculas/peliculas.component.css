@@ -1,0 +1,24 @@
+#caja-peli,
+#btn-add-peli,
+#display-peli{
+    margin-top:50px;
+}
+
+.clickable{
+    cursor: pointer;
+    color: #f44040;
+}
+
+.btn-update{
+    color: #68f58a;
+    text-decoration: none;
+}
+
+.margen-peli-inf{
+    margin-bottom: 25px;
+}
+
+.img-pelicula{
+    width: 100%;
+    height: 280px;
+}

@@ -1,0 +1,19 @@
+#caja-genero,
+#btn-add-genero,
+#display-genero{
+    margin-top:50px;
+}
+
+.clickable{
+    cursor: pointer;
+    color: #f44040;
+}
+
+.btn-update{
+    color: #68f58a;
+    text-decoration: none;
+}
+
+.margen-genero-inf{
+    margin-bottom: 25px;
+}

@@ -1,0 +1,26 @@
+#contenedor-inicial{
+	width: 100%;
+	max-width: 990px;
+	margin: 0 auto;
+}
+
+#contenedor-menu{
+	padding: 15px;
+}
+
+#contenedor-menu ul{
+	list-style-type: none;
+	margin-right: 0px;
+}
+
+.mi-inicio{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	text-align: left;
+}
+
+.mi-logo{
+	width: 164px;
+	height: 130px;
+}

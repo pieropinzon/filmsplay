@@ -458,8 +458,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var GenerosService = (function () {
     function GenerosService(http) {
         this.http = http;
-        // private url = "//localhost:4000/api/genero";
-        this.url = "//pruebafilm.herokuapp.com/api/genero";
+        // private url = "//localhost:4000/api/genero"; // url de los servicios en desarrollo
+        this.url = "//pruebafilm.herokuapp.com/api/genero"; // url de los servicios en produccion
     }
     GenerosService.prototype.getGeneros = function () {
         return this.http
@@ -887,8 +887,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var PeliculasService = (function () {
     function PeliculasService(http) {
         this.http = http;
-        // private url = "//localhost:4000/api/peliculas";
-        this.url = "//pruebafilm.herokuapp.com/api/peliculas";
+        // private url = "//localhost:4000/api/peliculas"; // url local
+        this.url = "//pruebafilm.herokuapp.com/api/peliculas"; // url de los servicios en produccion
     }
     PeliculasService.prototype.getPeliculas = function () {
         return this.http

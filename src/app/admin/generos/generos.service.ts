@@ -1,15 +1,20 @@
 import  { Injectable } from '@angular/core';
 import  { Http, Response, Headers } from '@angular/http';
-import { Observable } from 'rxjs';
+import  { AdminService } from '../admin.service';
+import  { Observable } from 'rxjs';
 import  'rxjs/add/operator/map';
 
 @Injectable()
 
 export class GenerosService{
     
-    private url = "http://localhost:4000/api/genero";
+    private url = "";
 
-    constructor(private http: Http){}
+    constructor(private http: Http, 
+                private adminService: AdminService
+                ){
+                    this.url = adminService.url_prod
+                }
 
     getGeneros(){
         return this.http

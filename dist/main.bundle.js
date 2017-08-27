@@ -458,7 +458,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var GenerosService = (function () {
     function GenerosService(http) {
         this.http = http;
-        this.url = "http://localhost:4000/api/genero";
+        this.url = "//localhost:4000/api/genero";
     }
     GenerosService.prototype.getGeneros = function () {
         return this.http
@@ -886,7 +886,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var PeliculasService = (function () {
     function PeliculasService(http) {
         this.http = http;
-        this.url = "http://localhost:4000/api/peliculas";
+        this.url = "//localhost:4000/api/peliculas";
     }
     PeliculasService.prototype.getPeliculas = function () {
         return this.http

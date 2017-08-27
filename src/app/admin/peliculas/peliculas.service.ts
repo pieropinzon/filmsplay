@@ -1,19 +1,14 @@
 import  { Injectable } from '@angular/core';
 import  { Http, Response, Headers, RequestOptions } from '@angular/http';
-import  { AdminService } from '../admin.service';
-import  { Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import  'rxjs/add/operator/map';
 
 @Injectable()
 export class PeliculasService {
 
-    private url = "";
+  private url = "//localhost:4000/api/peliculas";
 
-    constructor(private http: Http, 
-                private adminService: AdminService
-                ){
-                    this.url = adminService.url_prod
-                }
+    constructor(private http: Http){}
 
     getPeliculas(){
         return this.http

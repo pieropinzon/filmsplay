@@ -7,7 +7,9 @@ import  'rxjs/add/operator/map';
 
 export class GenerosService{
     
-    private url = "//localhost:4000/api/genero";
+    // private url = "//localhost:4000/api/genero";
+    private url = "//pruebafilm.herokuapp.com/api/genero";
+    
 
     constructor(private http: Http){}
 

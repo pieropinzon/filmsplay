@@ -25,6 +25,11 @@ block contenido
                             div(class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 caja-peli")
                                 a(href="#")
                                     img(class="portada-peli", src="/imagenes/films/#{pelis.foto}", alt="#{pelis.titulo}")
+                                    div(class="text") 
+                                        h4(class="text-center") #{pelis.titulo}
+                                        br
+                                        p #{pelis.descripcion.substr(0,100) + "..."}
+                                        small #{pelis.genero.nombre}
 
 
             aside(class="col-xl-3 col-lg-3")

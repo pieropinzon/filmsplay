@@ -10,12 +10,36 @@
     padding:0px 0px 15px 15px;
     width: 250px;
     height: 300px;
+    margin-bottom: 15px;
 }
 
 .portada-peli{
     width: 100%;
     height: 100%;
 }
+
+.text{  
+    width: 94%;
+    height: 95%;
+    background: #050519;
+    opacity:0; 
+    position: absolute;
+    top: 0;
+}
+
+.caja-peli:hover .text { 
+    opacity:0.9; 
+    text-align:justify; 
+    color:#ffffff; 
+    font-family:"Times New Roman", Times, serif; 
+    padding:15px; 
+}
+
+.text small{
+    position: absolute;
+    bottom: 15px;
+}
+
 
 .caja-prox{
     /*flexbox*/
@@ -44,7 +68,8 @@
 
 @media screen and (max-width: 768px){
 
-    .portada-peli {
+    .portada-peli,
+    .text {
         width: 280px;
         height: 300px;
 

@@ -91,6 +91,31 @@ router.get("/", function(req, res){
 });
 
 
+// router.get("/", function(req, res){
+
+// 	peliculasModels.paginate({
+// 		query : {},
+// 		page : req.query.page || 1,
+// 		select : 'title summary created',
+// 		populate : 'genero',
+// 		sort : {
+// 			'created' : -1
+// 		},
+// 		per_page : 5,
+// 		url : '/'
+// 	}, function(err, peliculas, pagination){
+// 			if (err) return console.log('Error', err);
+
+// 			res.render('index', {
+// 				peliculas : peliculas,
+// 				result: '',
+// 				pagination : pagination.render()
+// 			});
+// 	});
+
+// });
+
+
 function expresionBuscador(expresion){
 	return expresion.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
 }

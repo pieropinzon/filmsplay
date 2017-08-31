@@ -10,7 +10,6 @@
     padding:0px 0px 15px 15px;
     width: 250px;
     height: 300px;
-    margin-bottom: 15px;
 }
 
 .portada-peli{
@@ -19,7 +18,7 @@
 }
 
 .text{  
-    width: 94%;
+    width: 95%;
     height: 95%;
     background: #050519;
     opacity:0; 
@@ -47,7 +46,6 @@
  
 	flex-direction:row;
 	flex-wrap:wrap;
-
 }
 
 .img-foto-prox{
@@ -56,6 +54,15 @@
 
     /*flexbox*/
     flex-grow: 1;
+}
+
+.caja-paginacion{
+    padding: 15px 0px 0px 0px;
+}
+
+.paginacion{
+    justify-content: center;
+    margin: 0;
 }
 
 @media screen and (max-width: 991px){

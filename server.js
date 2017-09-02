@@ -11,9 +11,6 @@ const enlace = require('./server/controllers/enlaceController');
 
 const front = require('./server/controllers/frontController');
 
-
-const peliculasModels = require('./server/models/film');
-
 const app = express();
 
 // Parsers for POST data

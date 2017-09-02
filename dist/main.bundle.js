@@ -1,15 +1,15 @@
-webpackJsonp([1],{
+webpackJsonp(["main"],{
 
-/***/ "../../../../../src async recursive":
+/***/ "../../../../../src/$$_gendir lazy recursive":
 /***/ (function(module, exports) {
 
-function webpackEmptyContext(req) {
-	throw new Error("Cannot find module '" + req + "'.");
+function webpackEmptyAsyncContext(req) {
+	return new Promise(function(resolve, reject) { reject(new Error("Cannot find module '" + req + "'.")); });
 }
-webpackEmptyContext.keys = function() { return []; };
-webpackEmptyContext.resolve = webpackEmptyContext;
-module.exports = webpackEmptyContext;
-webpackEmptyContext.id = "../../../../../src async recursive";
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
 
 /***/ }),
 
@@ -42,9 +42,9 @@ module.exports = "<div class=\"container\">\n    <nav class=\"navbar navbar-togg
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__auth_auth_service__ = __webpack_require__("../../../../../src/app/auth/auth.service.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -65,7 +65,7 @@ var AdminComponent = (function () {
     AdminComponent.prototype.ngOnInit = function () {
     };
     AdminComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-admin',
             template: __webpack_require__("../../../../../src/app/admin/admin.component.html"),
             styles: [__webpack_require__("../../../../../src/app/admin/admin.component.css")],
@@ -76,7 +76,7 @@ var AdminComponent = (function () {
     return AdminComponent;
     var _a;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/admin.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/admin.component.js.map
 
 /***/ }),
 
@@ -84,6 +84,7 @@ var AdminComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/index.js");
@@ -91,7 +92,6 @@ var AdminComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__peliculas_peliculas_module__ = __webpack_require__("../../../../../src/app/admin/peliculas/peliculas.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__admin_component__ = __webpack_require__("../../../../../src/app/admin/admin.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__auth_auth_guard_service__ = __webpack_require__("../../../../../src/app/auth/auth-guard.service.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -112,12 +112,12 @@ var AdminModule = (function () {
     function AdminModule() {
     }
     AdminModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_common__["h" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
                 __WEBPACK_IMPORTED_MODULE_3__generos_generos_module__["a" /* GenerosModule */],
                 __WEBPACK_IMPORTED_MODULE_4__peliculas_peliculas_module__["a" /* PeliculasModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */]
+                __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */]
             ],
             declarations: [__WEBPACK_IMPORTED_MODULE_5__admin_component__["a" /* AdminComponent */]],
             exports: [],
@@ -130,7 +130,7 @@ var AdminModule = (function () {
     ], AdminModule);
     return AdminModule;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/admin.module.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/admin.module.js.map
 
 /***/ }),
 
@@ -138,13 +138,13 @@ var AdminModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminRoutes; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__generos_generos_component__ = __webpack_require__("../../../../../src/app/admin/generos/generos.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__generos_form_form_component__ = __webpack_require__("../../../../../src/app/admin/generos/form/form.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__peliculas_peliculas_component__ = __webpack_require__("../../../../../src/app/admin/peliculas/peliculas.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__peliculas_form_form_component__ = __webpack_require__("../../../../../src/app/admin/peliculas/form/form.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_component__ = __webpack_require__("../../../../../src/app/admin/admin.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__auth_auth_guard_service__ = __webpack_require__("../../../../../src/app/auth/auth-guard.service.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminRoutes; });
 
 
 
@@ -168,7 +168,7 @@ var AdminRoutes = [
         canActivate: [__WEBPACK_IMPORTED_MODULE_5__auth_auth_guard_service__["a" /* AuthGuardService */]],
     }
 ];
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/admin.routes.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/admin.routes.js.map
 
 /***/ }),
 
@@ -201,12 +201,12 @@ module.exports = "<!--<h1>Agregar Genero</h1>\n\n<div class=\"row\">\n  <div cla
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__generos_service__ = __webpack_require__("../../../../../src/app/admin/generos/generos.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__generos__ = __webpack_require__("../../../../../src/app/admin/generos/generos.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -232,7 +232,7 @@ var FormComponent = (function () {
     FormComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.form = this.fb.group({
-            nombre: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required]
+            nombre: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required]
         });
         var id = this.routeParams
             .snapshot
@@ -263,17 +263,17 @@ var FormComponent = (function () {
             });
     };
     FormComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-form',
             template: __webpack_require__("../../../../../src/app/admin/generos/form/form.component.html"),
             styles: [__webpack_require__("../../../../../src/app/admin/generos/form/form.component.css")]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__generos_service__["a" /* GenerosService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__generos_service__["a" /* GenerosService */]) === 'function' && _d) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__generos_service__["a" /* GenerosService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__generos_service__["a" /* GenerosService */]) === 'function' && _d) || Object])
     ], FormComponent);
     return FormComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/form.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/form.component.js.map
 
 /***/ }),
 
@@ -306,10 +306,10 @@ module.exports = "<div id=\"caja-genero\">\n\t<h1>Generos</h1>\n\n\t<p id=\"btn-
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GenerosComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__generos_service__ = __webpack_require__("../../../../../src/app/admin/generos/generos.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/index.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GenerosComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -358,7 +358,7 @@ var GenerosComponent = (function () {
         }
     };
     GenerosComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-generos',
             template: __webpack_require__("../../../../../src/app/admin/generos/generos.component.html"),
             styles: [__webpack_require__("../../../../../src/app/admin/generos/generos.component.css")]
@@ -368,7 +368,7 @@ var GenerosComponent = (function () {
     return GenerosComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/generos.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/generos.component.js.map
 
 /***/ }),
 
@@ -376,6 +376,7 @@ var GenerosComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GenerosModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/index.js");
@@ -384,7 +385,6 @@ var GenerosComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__generos_service__ = __webpack_require__("../../../../../src/app/admin/generos/generos.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__generos_component__ = __webpack_require__("../../../../../src/app/admin/generos/generos.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__form_form_component__ = __webpack_require__("../../../../../src/app/admin/generos/form/form.component.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GenerosModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -406,17 +406,17 @@ var GenerosModule = (function () {
     function GenerosModule() {
     }
     GenerosModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_6__generos_component__["a" /* GenerosComponent */],
                 __WEBPACK_IMPORTED_MODULE_7__form_form_component__["a" /* FormComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
-                __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* ReactiveFormsModule */]
+                __WEBPACK_IMPORTED_MODULE_4__angular_router__["c" /* RouterModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* ReactiveFormsModule */]
             ],
             exports: [
                 __WEBPACK_IMPORTED_MODULE_6__generos_component__["a" /* GenerosComponent */],
@@ -430,7 +430,7 @@ var GenerosModule = (function () {
     ], GenerosModule);
     return GenerosModule;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/generos.module.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/generos.module.js.map
 
 /***/ }),
 
@@ -438,11 +438,11 @@ var GenerosModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GenerosService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GenerosService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -494,13 +494,13 @@ var GenerosService = (function () {
         return this.url + "/" + userId;
     };
     GenerosService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"]) === 'function' && _a) || Object])
     ], GenerosService);
     return GenerosService;
     var _a;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/generos.service.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/generos.service.js.map
 
 /***/ }),
 
@@ -514,7 +514,7 @@ var Generos = (function () {
     }
     return Generos;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/generos.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/generos.js.map
 
 /***/ }),
 
@@ -547,13 +547,13 @@ module.exports = "<form [formGroup]=\"form\" (ngSubmit)=\"save()\" enctype=\"mul
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormPeliComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__peliculas_service__ = __webpack_require__("../../../../../src/app/admin/peliculas/peliculas.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__generos_generos_service__ = __webpack_require__("../../../../../src/app/admin/generos/generos.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__peliculas__ = __webpack_require__("../../../../../src/app/admin/peliculas/peliculas.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormPeliComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -589,15 +589,15 @@ var FormPeliComponent = (function () {
         });
         // inicializo el formulario y declaro las validaciones a realizar
         this.form = this.fb.group({
-            titulo: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            age: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            descripcion: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            audio: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            calidad: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            puntuacion: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            director: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            elenco: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            genero: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
+            titulo: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            age: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            descripcion: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            audio: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            calidad: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            puntuacion: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            director: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            elenco: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            genero: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
             portada: [''],
             myArray: this.fb.array([])
         });
@@ -657,16 +657,16 @@ var FormPeliComponent = (function () {
     // inicializo el array de enlaces
     FormPeliComponent.prototype.initArray = function () {
         return this.fb.group({
-            servidor: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            url: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required]
+            servidor: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            url: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required]
         });
     };
     // agrego los valores al formulario, con los datos del enlace de la pelicula a actualizar
     FormPeliComponent.prototype.initArrayUpdate = function (pelis) {
         return this.fb.group({
             _id: [pelis._id],
-            servidor: [pelis.servidor, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required],
-            url: [pelis.url, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* Validators */].required]
+            servidor: [pelis.servidor, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required],
+            url: [pelis.url, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* Validators */].required]
         });
     };
     FormPeliComponent.prototype.addArray = function () {
@@ -689,17 +689,17 @@ var FormPeliComponent = (function () {
         }
     };
     FormPeliComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-form',
             template: __webpack_require__("../../../../../src/app/admin/peliculas/form/form.component.html"),
             styles: [__webpack_require__("../../../../../src/app/admin/peliculas/form/form.component.css")]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__peliculas_service__["a" /* PeliculasService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__peliculas_service__["a" /* PeliculasService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__generos_generos_service__["a" /* GenerosService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__generos_generos_service__["a" /* GenerosService */]) === 'function' && _e) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__peliculas_service__["a" /* PeliculasService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__peliculas_service__["a" /* PeliculasService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__generos_generos_service__["a" /* GenerosService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__generos_generos_service__["a" /* GenerosService */]) === 'function' && _e) || Object])
     ], FormPeliComponent);
     return FormPeliComponent;
     var _a, _b, _c, _d, _e;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/form.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/form.component.js.map
 
 /***/ }),
 
@@ -732,10 +732,10 @@ module.exports = "<div id=\"caja-peli\">\n\t<h1>Peliculas</h1>\n\n\t<p id=\"btn-
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PeliculasComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__peliculas_service__ = __webpack_require__("../../../../../src/app/admin/peliculas/peliculas.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/index.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PeliculasComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -784,7 +784,7 @@ var PeliculasComponent = (function () {
         }
     };
     PeliculasComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-peliculas',
             template: __webpack_require__("../../../../../src/app/admin/peliculas/peliculas.component.html"),
             styles: [__webpack_require__("../../../../../src/app/admin/peliculas/peliculas.component.css")]
@@ -794,7 +794,7 @@ var PeliculasComponent = (function () {
     return PeliculasComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/peliculas.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/peliculas.component.js.map
 
 /***/ }),
 
@@ -802,6 +802,7 @@ var PeliculasComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PeliculasModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("../../../common/index.js");
@@ -811,7 +812,6 @@ var PeliculasComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__peliculas_service__ = __webpack_require__("../../../../../src/app/admin/peliculas/peliculas.service.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__peliculas_component__ = __webpack_require__("../../../../../src/app/admin/peliculas/peliculas.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__form_form_component__ = __webpack_require__("../../../../../src/app/admin/peliculas/form/form.component.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PeliculasModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -834,18 +834,18 @@ var PeliculasModule = (function () {
     function PeliculasModule() {
     }
     PeliculasModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_7__peliculas_component__["a" /* PeliculasComponent */],
                 __WEBPACK_IMPORTED_MODULE_8__form_form_component__["a" /* FormPeliComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["b" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_http__["HttpModule"],
-                __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* RouterModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* ReactiveFormsModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_common__["h" /* CommonModule */]
+                __WEBPACK_IMPORTED_MODULE_5__angular_router__["c" /* RouterModule */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_forms__["c" /* ReactiveFormsModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_common__["b" /* CommonModule */]
             ],
             exports: [
                 __WEBPACK_IMPORTED_MODULE_7__peliculas_component__["a" /* PeliculasComponent */],
@@ -859,7 +859,7 @@ var PeliculasModule = (function () {
     ], PeliculasModule);
     return PeliculasModule;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/peliculas.module.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/peliculas.module.js.map
 
 /***/ }),
 
@@ -867,11 +867,11 @@ var PeliculasModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PeliculasService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PeliculasService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -945,13 +945,13 @@ var PeliculasService = (function () {
         return this.url + "/" + peliculaId;
     };
     PeliculasService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["Http"]) === 'function' && _a) || Object])
     ], PeliculasService);
     return PeliculasService;
     var _a;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/peliculas.service.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/peliculas.service.js.map
 
 /***/ }),
 
@@ -965,7 +965,7 @@ var Peliculas = (function () {
     }
     return Peliculas;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/peliculas.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/peliculas.js.map
 
 /***/ }),
 
@@ -998,8 +998,8 @@ module.exports = "<router-outlet></router-outlet>"
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1015,7 +1015,7 @@ var AppComponent = (function () {
         this.title = 'app works!';
     }
     AppComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-root',
             template: __webpack_require__("../../../../../src/app/app.component.html"),
             styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -1024,7 +1024,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/app.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/app.component.js.map
 
 /***/ }),
 
@@ -1032,6 +1032,7 @@ var AppComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/index.js");
@@ -1042,7 +1043,6 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routes__ = __webpack_require__("../../../../../src/app/app.routes.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__not_found_not_found_component__ = __webpack_require__("../../../../../src/app/not-found/not-found.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__auth_auth_component__ = __webpack_require__("../../../../../src/app/auth/auth.component.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1066,7 +1066,7 @@ var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_8__not_found_not_found_component__["a" /* NotFoundComponent */],
@@ -1074,7 +1074,7 @@ var AppModule = (function () {
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["HttpModule"],
                 __WEBPACK_IMPORTED_MODULE_4__admin_admin_module__["a" /* AdminModule */],
                 __WEBPACK_IMPORTED_MODULE_5__front_front_module__["a" /* FrontModule */],
@@ -1087,7 +1087,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/app.module.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/app.module.js.map
 
 /***/ }),
 
@@ -1095,11 +1095,11 @@ var AppModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* unused harmony export routes */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__admin_admin_routes__ = __webpack_require__("../../../../../src/app/admin/admin.routes.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth_auth_component__ = __webpack_require__("../../../../../src/app/auth/auth.component.ts");
-/* unused harmony export routes */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
 
 
@@ -1107,8 +1107,8 @@ var routes = __WEBPACK_IMPORTED_MODULE_1__admin_admin_routes__["a" /* AdminRoute
     // ...FrontRoutes,
     { path: 'auths', component: __WEBPACK_IMPORTED_MODULE_2__auth_auth_component__["a" /* AuthComponent */] },
 ]);
-var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(routes);
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/app.routes.js.map
+var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule */].forRoot(routes);
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/app.routes.js.map
 
 /***/ }),
 
@@ -1116,11 +1116,11 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthGuardService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_jwt__ = __webpack_require__("../../../../angular2-jwt/angular2-jwt.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_jwt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular2_jwt__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthGuardService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1139,7 +1139,7 @@ var AuthGuardService = (function () {
     }
     AuthGuardService.prototype.canActivate = function () {
         // Check to see if a user has a valid JWT
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_angular2_jwt__["tokenNotExpired"])('id_token')) {
+        if (Object(__WEBPACK_IMPORTED_MODULE_2_angular2_jwt__["tokenNotExpired"])('id_token')) {
             // If they do, return true and allow the user to load the home component
             return true;
         }
@@ -1148,13 +1148,13 @@ var AuthGuardService = (function () {
         return false;
     };
     AuthGuardService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _a) || Object])
     ], AuthGuardService);
     return AuthGuardService;
     var _a;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/auth-guard.service.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/auth-guard.service.js.map
 
 /***/ }),
 
@@ -1187,9 +1187,9 @@ module.exports = "<div id=\"caja-auth\">\n    <h3 class=\"text-center\">Autentic
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__auth_service__ = __webpack_require__("../../../../../src/app/auth/auth.service.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1217,7 +1217,7 @@ var AuthComponent = (function () {
         return this.auth.loggedIn();
     };
     AuthComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-auth',
             template: __webpack_require__("../../../../../src/app/auth/auth.component.html"),
             styles: [__webpack_require__("../../../../../src/app/auth/auth.component.css")],
@@ -1228,7 +1228,7 @@ var AuthComponent = (function () {
     return AuthComponent;
     var _a;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/auth.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/auth.component.js.map
 
 /***/ }),
 
@@ -1236,11 +1236,11 @@ var AuthComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_jwt__ = __webpack_require__("../../../../angular2-jwt/angular2-jwt.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_jwt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular2_jwt__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1283,16 +1283,16 @@ var AuthService = (function () {
         this.router.navigateByUrl('/auths');
     };
     AuthService.prototype.loggedIn = function () {
-        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_angular2_jwt__["tokenNotExpired"])('id_token');
+        return Object(__WEBPACK_IMPORTED_MODULE_2_angular2_jwt__["tokenNotExpired"])('id_token');
     };
     AuthService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _a) || Object])
     ], AuthService);
     return AuthService;
     var _a;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/auth.service.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/auth.service.js.map
 
 /***/ }),
 
@@ -1325,8 +1325,8 @@ module.exports = "<div id=\"contenedor-inicial\">\n\t<div style=\"position: rela
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FrontComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1343,7 +1343,7 @@ var FrontComponent = (function () {
     FrontComponent.prototype.ngOnInit = function () {
     };
     FrontComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-front',
             template: __webpack_require__("../../../../../src/app/front/front.component.html"),
             styles: [__webpack_require__("../../../../../src/app/front/front.component.css")]
@@ -1352,7 +1352,7 @@ var FrontComponent = (function () {
     ], FrontComponent);
     return FrontComponent;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/front.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/front.component.js.map
 
 /***/ }),
 
@@ -1360,6 +1360,7 @@ var FrontComponent = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FrontModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/index.js");
@@ -1367,7 +1368,6 @@ var FrontComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pelis_categoria_pelis_categoria_component__ = __webpack_require__("../../../../../src/app/front/pelis-categoria/pelis-categoria.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pelis_detalle_pelis_detalle_component__ = __webpack_require__("../../../../../src/app/front/pelis-detalle/pelis-detalle.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__front_component__ = __webpack_require__("../../../../../src/app/front/front.component.ts");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FrontModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1388,15 +1388,15 @@ var FrontModule = (function () {
     function FrontModule() {
     }
     FrontModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [__WEBPACK_IMPORTED_MODULE_6__front_component__["a" /* FrontComponent */],
                 __WEBPACK_IMPORTED_MODULE_3__pelis_pelis_component__["a" /* PelisComponent */],
                 __WEBPACK_IMPORTED_MODULE_4__pelis_categoria_pelis_categoria_component__["a" /* PelisCategoriaComponent */],
                 __WEBPACK_IMPORTED_MODULE_5__pelis_detalle_pelis_detalle_component__["a" /* PelisDetalleComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_common__["h" /* CommonModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */]
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */]
             ],
             exports: [__WEBPACK_IMPORTED_MODULE_6__front_component__["a" /* FrontComponent */],
                 __WEBPACK_IMPORTED_MODULE_3__pelis_pelis_component__["a" /* PelisComponent */],
@@ -1409,7 +1409,7 @@ var FrontModule = (function () {
     ], FrontModule);
     return FrontModule;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/front.module.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/front.module.js.map
 
 /***/ }),
 
@@ -1442,8 +1442,8 @@ module.exports = "<p class=\"blockquote\">\n  esta es la seccion de peliculas ca
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PelisCategoriaComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1460,7 +1460,7 @@ var PelisCategoriaComponent = (function () {
     PelisCategoriaComponent.prototype.ngOnInit = function () {
     };
     PelisCategoriaComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-pelis-categoria',
             template: __webpack_require__("../../../../../src/app/front/pelis-categoria/pelis-categoria.component.html"),
             styles: [__webpack_require__("../../../../../src/app/front/pelis-categoria/pelis-categoria.component.css")]
@@ -1469,7 +1469,7 @@ var PelisCategoriaComponent = (function () {
     ], PelisCategoriaComponent);
     return PelisCategoriaComponent;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/pelis-categoria.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/pelis-categoria.component.js.map
 
 /***/ }),
 
@@ -1502,8 +1502,8 @@ module.exports = "<div class=\"contenedor-pelis\">\n            <h3>Resident Evi
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PelisDetalleComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1520,7 +1520,7 @@ var PelisDetalleComponent = (function () {
     PelisDetalleComponent.prototype.ngOnInit = function () {
     };
     PelisDetalleComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-pelis-detalle',
             template: __webpack_require__("../../../../../src/app/front/pelis-detalle/pelis-detalle.component.html"),
             styles: [__webpack_require__("../../../../../src/app/front/pelis-detalle/pelis-detalle.component.css")]
@@ -1529,7 +1529,7 @@ var PelisDetalleComponent = (function () {
     ], PelisDetalleComponent);
     return PelisDetalleComponent;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/pelis-detalle.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/pelis-detalle.component.js.map
 
 /***/ }),
 
@@ -1562,8 +1562,8 @@ module.exports = "<div id=\"contenedor-peli\">\n\t<div class=\"poster-peli\">\n\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PelisComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1580,7 +1580,7 @@ var PelisComponent = (function () {
     PelisComponent.prototype.ngOnInit = function () {
     };
     PelisComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-pelis',
             template: __webpack_require__("../../../../../src/app/front/pelis/pelis.component.html"),
             styles: [__webpack_require__("../../../../../src/app/front/pelis/pelis.component.css")]
@@ -1589,7 +1589,7 @@ var PelisComponent = (function () {
     ], PelisComponent);
     return PelisComponent;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/pelis.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/pelis.component.js.map
 
 /***/ }),
 
@@ -1622,8 +1622,8 @@ module.exports = "<p>\n  not-found works!\n</p>\n"
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotFoundComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1640,7 +1640,7 @@ var NotFoundComponent = (function () {
     NotFoundComponent.prototype.ngOnInit = function () {
     };
     NotFoundComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-not-found',
             template: __webpack_require__("../../../../../src/app/not-found/not-found.component.html"),
             styles: [__webpack_require__("../../../../../src/app/not-found/not-found.component.css")]
@@ -1649,7 +1649,7 @@ var NotFoundComponent = (function () {
     ], NotFoundComponent);
     return NotFoundComponent;
 }());
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/not-found.component.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/not-found.component.js.map
 
 /***/ }),
 
@@ -1665,7 +1665,7 @@ var NotFoundComponent = (function () {
 var environment = {
     production: false
 };
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/environment.js.map
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/environment.js.map
 
 /***/ }),
 
@@ -1683,10 +1683,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].production) {
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
-__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsPlay/src/main.js.map
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
+//# sourceMappingURL=/home/pierop/Documents/Semetre2017-1/angular 2/filmsplay/src/main.js.map
 
 /***/ }),
 

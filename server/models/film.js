@@ -1,12 +1,10 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-superPagination = require('super-pagination').mongoose;
-
 mongoose.Promise = require('bluebird');
 
-mongoose.connect("mongodb://localhost/filmsPlay");
-// mongoose.connect("mongodb://pieropinzon:paulperozo18@ds159013.mlab.com:59013/filmsplay");
+// mongoose.connect("mongodb://localhost/filmsPlay");
+mongoose.connect("mongodb://pieropinzon:paulperozo18@ds159013.mlab.com:59013/filmsplay");
 
 var film_schema = new Schema({
     titulo:{type:String,required: "EL titulo de la pelicula es Obligatorio"},        
@@ -20,10 +18,6 @@ var film_schema = new Schema({
     foto:{type:String,required: "Debe la imagen de portadade la pelicula"}, 
     genero:{type: Schema.Types.ObjectId, ref: "Genero"},
     enlace:[{type: Schema.Types.ObjectId, ref: "Enlace"}]       
-});
-
-film_schema.plugin(superPagination, {
-    theme : 'bootstrap'
 });
 
 var Film = mongoose.model("Film",film_schema);

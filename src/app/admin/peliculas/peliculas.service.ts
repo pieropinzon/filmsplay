@@ -6,6 +6,7 @@ import  'rxjs/add/operator/map';
 @Injectable()
 export class PeliculasService {
 
+    // private url = "//localhost:4000/api/peliculas"; // url local
     private url = "//pruebafilm.herokuapp.com/api/peliculas"; // url de los servicios en produccion
 
     constructor(private http: Http){}

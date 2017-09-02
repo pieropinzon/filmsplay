@@ -7,6 +7,7 @@ import  'rxjs/add/operator/map';
 
 export class GenerosService{
     
+    // private url = "//localhost:4000/api/genero"; // url de los servicios en desarrollo
     private url = "//pruebafilm.herokuapp.com/api/genero"; // url de los servicios en produccion
     
 

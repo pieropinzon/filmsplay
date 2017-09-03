@@ -24,7 +24,7 @@ block contenido
                         for pelis in peliculas
                             div(class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 caja-peli")
                                 a(href="#")
-                                    img(class="portada-peli", src="/public/imagenes/films/films 450.png", alt="#{pelis.titulo}")
+                                    img(class="portada-peli", src="/public/imagenes/films/#{ pelis.foto }", alt="#{pelis.titulo}")
                                     div(class="text") 
                                         h4(class="text-center") #{pelis.titulo}
                                         br
@@ -39,7 +39,7 @@ block contenido
                         hr        
                         div(class="caja-prox")    
                             for pelis in peliculas
-                                img(class="img-foto-prox img-thumbnail", src="/public/imagenes/films/films 450.png", alt="#{pelis.titulo}")
+                                img(class="img-foto-prox img-thumbnail", src="/public/imagenes/films/#{ pelis.foto }", alt="#{pelis.titulo}")
                                 
                         
                         br
@@ -49,7 +49,7 @@ block contenido
                         hr
                         div(class="caja-prox")    
                             for pelis in peliculas
-                                img(class="img-foto-prox img-thumbnail", src="/public/imagenes/films/films 450.png", alt="#{pelis.titulo}")
+                                img(class="img-foto-prox img-thumbnail", src="/public/imagenes/films/#{ pelis.foto }", alt="#{pelis.titulo}")
                     
                         br
 

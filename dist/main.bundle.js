@@ -456,10 +456,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var GenerosService = (function () {
-    // private url = "//pruebafilm.herokuapp.com/api/genero"; // url de los servicios en produccion
     function GenerosService(http) {
         this.http = http;
-        this.url = "//localhost:4000/api/genero"; // url de los servicios en desarrollo
+        // private url = "//localhost:4000/api/genero"; // url de los servicios en desarrollo
+        this.url = "//pruebafilm.herokuapp.com/api/genero"; // url de los servicios en produccion
     }
     GenerosService.prototype.getGeneros = function () {
         return this.http
@@ -724,7 +724,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/admin/peliculas/peliculas.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"caja-peli\">\n\t<h1>Peliculas</h1>\n\n\t<p id=\"btn-add-peli\">\n\t\t<a routerLink=\"/admin/peliculas_new\" class=\"btn btn-primary\">Agregar Pelicula</a>\n\t</p>\n\n\t<div id=\"display-peli\" *ngIf=\"isPeliculas\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-lg-3 col-md-4 margen-peli-inf\" *ngFor=\"let pelicula of peliculas\">\n\t\t\t\t<div class=\"card\">\n\t\t\t\t\t<img class=\"card-img-top\" src=\"/imagenes/films/{{pelicula.foto}}\" alt=\"...\" class=\"img-pelicula img-thumbnail\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<h5 class=\"card-title text-center\"> {{ pelicula.titulo.substr(0,23) }} </h5>\n\t\t\t\t\t\t<div class=\"card-text text-right\">\n\t\t\t\t\t\t\t<a [routerLink]=\"['/admin/peliculas', pelicula._id]\" class=\"btn-update\">\n\t\t\t\t\t\t\t\t<i class=\"fa fa-pencil-square-o fa-lg\"></i>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<i (click)=\"deletePelicula(pelicula)\" class=\"fa fa-trash fa-lg clickable\"></i>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
+module.exports = "<div id=\"caja-peli\">\n\t<h1>Peliculas</h1>\n\n\t<p id=\"btn-add-peli\">\n\t\t<a routerLink=\"/admin/peliculas_new\" class=\"btn btn-primary\">Agregar Pelicula</a>\n\t</p>\n\n\t<div id=\"display-peli\" *ngIf=\"isPeliculas\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-lg-3 col-md-4 margen-peli-inf\" *ngFor=\"let pelicula of peliculas\">\n\t\t\t\t<div class=\"card\">\n\t\t\t\t\t<img class=\"card-img-top\" src=\"/public/imagenes/films/{{pelicula.foto}}\" alt=\"...\" class=\"img-pelicula img-thumbnail\">\n\t\t\t\t\t<div class=\"card-block\">\n\t\t\t\t\t\t<h5 class=\"card-title text-center\"> {{ pelicula.titulo.substr(0,23) }} </h5>\n\t\t\t\t\t\t<div class=\"card-text text-right\">\n\t\t\t\t\t\t\t<a [routerLink]=\"['/admin/peliculas', pelicula._id]\" class=\"btn-update\">\n\t\t\t\t\t\t\t\t<i class=\"fa fa-pencil-square-o fa-lg\"></i>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t<i (click)=\"deletePelicula(pelicula)\" class=\"fa fa-trash fa-lg clickable\"></i>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -885,10 +885,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var PeliculasService = (function () {
-    // private url = "//pruebafilm.herokuapp.com/api/peliculas"; // url de los servicios en produccion
     function PeliculasService(http) {
         this.http = http;
-        this.url = "//localhost:4000/api/peliculas"; // url local
+        // private url = "//localhost:4000/api/peliculas"; // url local
+        this.url = "//pruebafilm.herokuapp.com/api/peliculas"; // url de los servicios en produccion
     }
     PeliculasService.prototype.getPeliculas = function () {
         return this.http

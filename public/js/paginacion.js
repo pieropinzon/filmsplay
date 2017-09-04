@@ -12,7 +12,8 @@ $(document).ready(function(){
     }
 
     console.log('hola');
-    console.log(local_data);
+    console.log("local data -- " + local_data);
+    console.log("num_page -- " + num_page);    
     
     if(num_page<=5){
         ini=1;
@@ -34,9 +35,13 @@ $(document).ready(function(){
     if (num_page>1){
         $('#paginas').append('<li class="page-item"><a class="page-link" href="'+ direccion +'1" id="1" arial-label="Previous"><span aria-hidden="true">&laquo</span><span class="sr-only">Previous</span></a></li>');
     }
-    for (var i = ini; i <= fin; i++) {
+
+    if(local_data >= 2){
+        for (var i = ini; i <= fin; i++) {
             $('#paginas').append('<li class="page-item"><a class="page-link" href="'+direccion + i+'" id="'+i+'">'+i+'</a></li>');
+        }
     }
+    
     if (num_page<local_data){
         $('#paginas').append('<li class="page-item"><a class="page-link" href="'+ direccion + (num_page+1) +'" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>');
     }	

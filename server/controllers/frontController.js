@@ -9,59 +9,91 @@ var router = express.Router();
 // muestra las peliculas del año
 router.get("/peliculas/fecha/:age",function (req,res) {
 
-	var sinResultados = '';
+	const num_por_page = 5;
 
-	peliculasModels.find({age: req.params.age})
-		.populate("genero")
-		.exec(function (err,peliculas) {
-			if (err) console.log(err);
+	let page = (parseInt(1)-1)*num_por_page,
+		num_page = parseInt(1),
+		sinResultados = '',
+		count;
 
-			if(peliculas.length < 1){
-				sinResultados = 'No se han encontrado resultados para el año: ' + req.params.age;
-			}
-			
-			res.render("index",{peliculas:peliculas, result: sinResultados});
-		});
+	let busqueda = tipoBusqueda("age",req.params.age);
+	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados);
+
 });
 
+// muestra las peliculas del año
+router.get("/peliculas/fecha/:age/page/:page",function (req,res) {
+
+	const num_por_page = 5;
+
+	let page = (parseInt(req.params.page)-1)*num_por_page,
+		num_page = parseInt(req.params.page),
+		sinResultados = '',
+		count;
+
+	let busqueda = tipoBusqueda("age",req.params.age);
+	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados);
+
+});
 
 // muestra las peliculas del año
 router.get("/peliculas/genero/:genero",function (req,res) {
-	var sinResultados = '';
-	var busqueda = {};
+	
+	const num_por_page = 5;
+
+	let page = (parseInt(1)-1)*num_por_page,
+		num_page = parseInt(1),
+		sinResultados = '',
+		count;
 
 	generosModels.findOne({nombre: req.params.genero}, function(err, genero){
 		if (err) console.log(err);
 
 		if(genero){
 
-			peliculasModels.find({genero: genero._id})
-			.populate("genero")
-			.exec(function (err,peliculas) {
-				if (err) console.log(err);
-
-				if(peliculas.length < 1){
-					sinResultados = 'No se han encontrado resultados para el Genero: ' + req.params.genero;
-				}
-			
-				res.render("index",{peliculas:peliculas, result: sinResultados});
-
-			});
+			let busqueda = tipoBusqueda("genero",genero._id);
+			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados);
 
 		}else{
 			sinResultados = 'No se han encontrado resultados para el Genero: ' + req.params.genero;
-
 			res.render("index",{result: sinResultados});
 		}		
 	})
 });
 
+router.get("/peliculas/genero/:genero/page/:page",function (req,res) {
+	
+	const num_por_page = 5;
 
+	let page = (parseInt(req.params.page)-1)*num_por_page,
+		num_page = parseInt(req.params.page),
+		sinResultados = '',
+		count;
+
+	generosModels.findOne({nombre: req.params.genero}, function(err, genero){
+		if (err) console.log(err);
+
+		if(genero){
+
+			let busqueda = tipoBusqueda("genero",genero._id);
+			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados);
+
+		}else{
+			sinResultados = 'No se han encontrado resultados para el Genero: ' + req.params.genero;
+			res.render("index",{result: sinResultados});
+		}		
+	})
+});
 
 router.get("/", function(req, res){
 
-	var sinResultados = '';
-	
+	const num_por_page = 5;
+
+	let page = (parseInt(1)-1)*num_por_page,
+		num_page = parseInt(1),
+		sinResultados = '',
+		count;
+
 	if(req.query.search){
 		const regex = new RegExp(expresionBuscador(req.query.search),'gi');
 
@@ -73,48 +105,108 @@ router.get("/", function(req, res){
 			if(peliculas.length < 1){
 				sinResultados = 'No se han encontrado resultados para tu búsqueda: ' + req.query.search;
 			}
-			res.render("index",{peliculas:peliculas, result: sinResultados});
+
+			let context = {
+								peliculas : peliculas,
+								num_page : num_page,
+								count : count,
+								result: sinResultados
+						};
+
+
+			res.render("index",context);
 		});
 
 	}else{
 
-		peliculasModels.find({})
-		.populate("genero")
-		.exec(function (err,peliculas) {
-			if (err) console.log(err);
-
-			res.render("index",{peliculas:peliculas, result: sinResultados});
-		});
+		let busqueda = tipoBusqueda("","");
+		obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados);
 
 	}
 
 });
 
 
-// router.get("/", function(req, res){
+router.get("/page/:page", function(req, res){
 
-// 	peliculasModels.paginate({
-// 		query : {},
-// 		page : req.query.page || 1,
-// 		select : 'title summary created',
-// 		populate : 'genero',
-// 		sort : {
-// 			'created' : -1
-// 		},
-// 		per_page : 5,
-// 		url : '/'
-// 	}, function(err, peliculas, pagination){
-// 			if (err) return console.log('Error', err);
+	const num_por_page = 5;
 
-// 			res.render('index', {
-// 				peliculas : peliculas,
-// 				result: '',
-// 				pagination : pagination.render()
-// 			});
-// 	});
+	let page = (parseInt(req.params.page)-1)*num_por_page,
+		num_page = parseInt(req.params.page),
+		sinResultados = '',
+		count;	
 
-// });
+	let busqueda = tipoBusqueda("","");
 
+	obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados);
+
+});
+
+function tipoBusqueda(tipo, dato){
+	let busqueda;
+
+	if(tipo == ""){
+		busqueda = {};
+	}else{
+		if(tipo == "age"){
+			busqueda = {age: dato};
+		}else{
+			if(tipo == "genero"){
+				busqueda = {genero: dato};
+			}
+		}
+	}
+
+	return busqueda;
+}
+
+function sinResult(tipo, req){
+	let busqueda;
+
+	if(tipo == "age"){
+		busqueda = 'No se han encontrado resultados para el año: ' + req.params.age;
+	}else{
+		if(tipo == "genero"){
+			busqueda = 'No se han encontrado resultados para el Genero: ' + req.params.genero;
+		}
+	}
+
+	return busqueda;
+}
+
+function obtenerPeliculas(res, req, tipo, dato, busqueda, page, num_page, num_por_page, count, sinResultados){
+
+	peliculasModels
+		.count(busqueda)
+		.then( num => {
+			count = parseInt((num/num_por_page)+1)
+		});
+
+	peliculasModels.find(busqueda)
+		.populate("genero")
+		.skip(page)
+		.limit(num_por_page)
+		.exec(function (err,peliculas) {
+			if (err) console.log(err);
+
+			if(peliculas.length < 1){
+				sinResultados = sinResult(tipo, req);
+			}
+
+			let context = {
+								peliculas : peliculas,
+								num_page : num_page,
+								count : count,
+								result: sinResultados,
+								url: tipo,
+								dato: dato
+						};
+
+
+			res.render("index",context);
+		});
+
+}
 
 function expresionBuscador(expresion){
 	return expresion.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");

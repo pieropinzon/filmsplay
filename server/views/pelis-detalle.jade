@@ -1,0 +1,32 @@
+extends ./layout.jade
+
+block post-style
+    link(rel="stylesheet", href="/public/css/pelis-detalle.css")
+
+
+
+block contenido
+
+    div(id="caja-principal")
+
+        
+        section(class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12")
+
+            div(class="row")
+
+                div(class="col-xl-5 col-lg-6")
+                    img(class="portada-peli", src="/public/imagenes/films/#{ pelicula.foto }", alt="#{pelicula.titulo}")
+
+                div(class="col-xl-7 col-lg-6 caja-datos")
+                    div
+                        p #{ pelicula.descripcion}
+                        
+                        p Audio: #{pelicula.audio}
+                        
+                        p Calidad: #{pelicula.calidad}
+                        
+                        p Puntuación: #{pelicula.puntuacion}
+                        
+                        p Director: #{pelicula.director}
+                        
+                        p Elenco: #{pelicula.elenco}

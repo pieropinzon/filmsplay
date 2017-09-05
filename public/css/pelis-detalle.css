@@ -1,0 +1,10 @@
+#caja-principal{
+    width: 70%;
+    padding:20px 0px 20px 0px;
+    margin: 0 auto;
+}
+
+.caja-datos{
+    display: flex;
+    align-items: center;
+}

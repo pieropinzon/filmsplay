@@ -142,6 +142,22 @@ router.get("/page/:page", function(req, res){
 
 });
 
+
+router.get("/films/:titulo", function(req, res){
+	
+	peliculasModels
+		.findOne({titulo: req.params.titulo})
+		.populate("genero")
+		.populate("enlace")
+		.exec(function (err,pelicula) {
+			if (err) console.log(err);
+
+			res.render("pelis-detalle", {pelicula: pelicula});
+			
+		});
+		
+});
+
 function tipoBusqueda(tipo, dato){
 	let busqueda;
 

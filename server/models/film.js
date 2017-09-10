@@ -3,8 +3,8 @@ var Schema = mongoose.Schema;
 
 mongoose.Promise = require('bluebird');
 
-mongoose.connect("mongodb://localhost/filmsPlay");
-// mongoose.connect("mongodb://pieropinzon:paulperozo18@ds159013.mlab.com:59013/filmsplay");
+// mongoose.connect("mongodb://localhost/filmsPlay");
+mongoose.connect("mongodb://pieropinzon:paulperozo18@ds159013.mlab.com:59013/filmsplay");
 
 var film_schema = new Schema({
     titulo:{type:String,required: "EL titulo de la pelicula es Obligatorio"},        

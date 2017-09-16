@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://pruebafilm.herokuapp.com/</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Comedia</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Suspenso</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Drama</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Acci%C3%B3n</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Aventura</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Romance</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Fantas%C3%ADa</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Infantil</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Ciencia%20Ficci%C3%B3n</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/genero/Terror</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/fecha/2017</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/fecha/2016</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/fecha/2015</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/peliculas/fecha/2014</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/films/Un%20golpe%20con%20estilo</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/films/Mujer%20Maravilla</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/films/La%20Vigilante%20del%20Futuro:%20Ghost%20in%20the%20Shell</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/films/Un%20don%20excepcional</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://pruebafilm.herokuapp.com/films/Un%20jefe%20en%20pa%C3%B1ales</loc>
+  <lastmod>2017-09-16T20:23:15+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+</urlset>

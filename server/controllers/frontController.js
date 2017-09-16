@@ -56,7 +56,9 @@ router.get("/peliculas/genero/:genero",function (req,res) {
 
 		}else{
 			sinResultados = 'No se han encontrado resultados para el Genero: ' + req.params.genero;
-			res.render("index",{result: sinResultados});
+			res.render("index",{result: sinResultados,
+								title: req.params.genero
+				});
 		}		
 	})
 });
@@ -152,7 +154,7 @@ router.get("/films/:titulo", function(req, res){
 		.exec(function (err,pelicula) {
 			if (err) console.log(err);
 
-			res.render("pelis-detalle", {pelicula: pelicula});
+			res.render("pelis-detalle", {pelicula: pelicula, dato: req.params.titulo});
 			
 		});
 		

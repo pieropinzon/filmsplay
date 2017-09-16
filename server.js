@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(connect.compress());
 
 //declaracion de la ruta de archivos estaticos
-app.use("/public", express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // motor de vistas
 app.set('views', path.join(__dirname, './server/views'));

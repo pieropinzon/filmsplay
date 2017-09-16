@@ -112,7 +112,8 @@ router.get("/", function(req, res){
 								peliculas : peliculas,
 								num_page : num_page,
 								count : count,
-								result: sinResultados
+								result: sinResultados,
+								dato: "Peliculas HD"
 						};
 
 
@@ -122,7 +123,7 @@ router.get("/", function(req, res){
 	}else{
 
 		let busqueda = tipoBusqueda("","");
-		obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados);
+		obtenerPeliculas(res, req, "", "Películas HD", busqueda, page, num_page, num_por_page, count, sinResultados);
 
 	}
 
@@ -140,7 +141,7 @@ router.get("/page/:page", function(req, res){
 
 	let busqueda = tipoBusqueda("","");
 
-	obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados);
+	obtenerPeliculas(res, req, "", "Peliculas HD", busqueda, page, num_page, num_por_page, count, sinResultados);
 
 });
 

@@ -33,7 +33,7 @@ block contenido
                             div(class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 caja-peli")
                                 a(href="/films/#{pelis.titulo}")
                                     //- img(class="portada-peli", src="/imagenes/films/#{ pelis.foto }", alt="#{pelis.titulo}")
-                                    img(class="portada-peli", src="http://lorempixel.com/g/400/600", alt="#{pelis.titulo + ' (' + pelis.age + ') descargar peliculas gratis en HD'}")
+                                    img(class="portada-peli", src="http://lorempixel.com/g/400/600", alt="#{pelis.titulo.substr(0,19) + ' (' + pelis.age + ') descargar peliculas gratis en HD'}")
                                     
                                     div(class="text") 
                                         h4(class="text-center") #{pelis.titulo + " (" + pelis.age + ")"}

@@ -36,7 +36,7 @@ block contenido
                                     img(class="portada-peli", src="http://lorempixel.com/g/400/600", alt="#{pelis.titulo}")
                                     
                                     div(class="text") 
-                                        h4(class="text-center") #{pelis.titulo}
+                                        h4(class="text-center") #{pelis.titulo + " (" + pelis.age + ")"}
                                         br
                                         p #{pelis.descripcion.substr(0,100) + "..."}
                                         small #{pelis.genero.nombre}

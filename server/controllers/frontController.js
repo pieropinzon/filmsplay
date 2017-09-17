@@ -17,7 +17,7 @@ router.get("/peliculas/fecha/:age",function (req,res) {
 		count;
 
 	let busqueda = tipoBusqueda("age",req.params.age);
-	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados);
+	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados, "Películas del " + req.params.age +" para descargar gratis en HD");
 
 });
 
@@ -32,7 +32,7 @@ router.get("/peliculas/fecha/:age/page/:page",function (req,res) {
 		count;
 
 	let busqueda = tipoBusqueda("age",req.params.age);
-	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados);
+	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados, "Películas del " + req.params.age +" para descargar gratis en HD");
 
 });
 
@@ -52,7 +52,7 @@ router.get("/peliculas/genero/:genero",function (req,res) {
 		if(genero){
 
 			let busqueda = tipoBusqueda("genero",genero._id);
-			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados);
+			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados, "Películas de " + req.params.genero +" para descargar gratis en HD");
 
 		}else{
 			sinResultados = 'No se han encontrado resultados para el Genero: ' + req.params.genero;
@@ -78,11 +78,13 @@ router.get("/peliculas/genero/:genero/page/:page",function (req,res) {
 		if(genero){
 
 			let busqueda = tipoBusqueda("genero",genero._id);
-			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados);
+			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados, "Películas de " + req.params.genero +" para descargar gratis en HD");
 
 		}else{
 			sinResultados = 'No se han encontrado resultados para el Genero: ' + req.params.genero;
-			res.render("index",{result: sinResultados});
+			res.render("index",{result: sinResultados,
+								title: "Películas de " + req.params.genero +"para descargar gratis en HD"
+				});
 		}		
 	})
 });
@@ -113,7 +115,7 @@ router.get("/", function(req, res){
 								num_page : num_page,
 								count : count,
 								result: sinResultados,
-								dato: "Peliculas HD"
+								title: "Películas de " + req.query.search +"para descargar gratis en HD"
 						};
 
 
@@ -123,7 +125,7 @@ router.get("/", function(req, res){
 	}else{
 
 		let busqueda = tipoBusqueda("","");
-		obtenerPeliculas(res, req, "", "Películas HD", busqueda, page, num_page, num_por_page, count, sinResultados);
+		obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados, "Películas para descargar gratis en HD");
 
 	}
 
@@ -141,7 +143,7 @@ router.get("/page/:page", function(req, res){
 
 	let busqueda = tipoBusqueda("","");
 
-	obtenerPeliculas(res, req, "", "Peliculas HD", busqueda, page, num_page, num_por_page, count, sinResultados);
+	obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados, "Películas para descargar gratis en HD");
 
 });
 
@@ -155,7 +157,9 @@ router.get("/films/:titulo", function(req, res){
 		.exec(function (err,pelicula) {
 			if (err) console.log(err);
 
-			res.render("pelis-detalle", {pelicula: pelicula, dato: req.params.titulo});
+			res.render("pelis-detalle", {pelicula: pelicula, 
+										 title: pelicula.titulo + " (" + pelicula.age + ") descargar gratis en HD"
+				});
 			
 		});
 		
@@ -193,7 +197,7 @@ function sinResult(tipo, req){
 	return busqueda;
 }
 
-function obtenerPeliculas(res, req, tipo, dato, busqueda, page, num_page, num_por_page, count, sinResultados){
+function obtenerPeliculas(res, req, tipo, dato, busqueda, page, num_page, num_por_page, count, sinResultados, title){
 
 	peliculasModels
 		.count(busqueda)
@@ -218,7 +222,8 @@ function obtenerPeliculas(res, req, tipo, dato, busqueda, page, num_page, num_po
 								count : count,
 								result: sinResultados,
 								url: tipo,
-								dato: dato
+								dato: dato,
+								title: title
 						};
 
 

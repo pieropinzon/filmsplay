@@ -17,7 +17,7 @@ router.get("/peliculas/fecha/:age",function (req,res) {
 		count;
 
 	let busqueda = tipoBusqueda("age",req.params.age);
-	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados, "Películas del " + req.params.age +" para descargar gratis en HD");
+	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados, "Peliculas del " + req.params.age +" para descargar gratis en HD");
 
 });
 
@@ -32,7 +32,7 @@ router.get("/peliculas/fecha/:age/page/:page",function (req,res) {
 		count;
 
 	let busqueda = tipoBusqueda("age",req.params.age);
-	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados, "Películas del " + req.params.age +" para descargar gratis en HD");
+	obtenerPeliculas(res, req, "age", req.params.age, busqueda, page, num_page, num_por_page, count, sinResultados, "Peliculas del " + req.params.age +" para descargar gratis en HD");
 
 });
 
@@ -52,7 +52,7 @@ router.get("/peliculas/genero/:genero",function (req,res) {
 		if(genero){
 
 			let busqueda = tipoBusqueda("genero",genero._id);
-			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados, "Películas de " + req.params.genero +" para descargar gratis en HD");
+			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados, "Peliculas de " + req.params.genero +" para descargar gratis en HD");
 
 		}else{
 			sinResultados = 'No se han encontrado resultados para el Genero: ' + req.params.genero;
@@ -78,12 +78,12 @@ router.get("/peliculas/genero/:genero/page/:page",function (req,res) {
 		if(genero){
 
 			let busqueda = tipoBusqueda("genero",genero._id);
-			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados, "Películas de " + req.params.genero +" para descargar gratis en HD");
+			obtenerPeliculas(res, req, "genero", req.params.genero, busqueda, page, num_page, num_por_page, count, sinResultados, "Peliculas de " + req.params.genero +" para descargar gratis en HD");
 
 		}else{
 			sinResultados = 'No se han encontrado resultados para el Genero: ' + req.params.genero;
 			res.render("index",{result: sinResultados,
-								title: "Películas de " + req.params.genero +"para descargar gratis en HD"
+								title: "Peliculas de " + req.params.genero +" para descargar gratis en HD"
 				});
 		}		
 	})
@@ -115,7 +115,7 @@ router.get("/", function(req, res){
 								num_page : num_page,
 								count : count,
 								result: sinResultados,
-								title: "Películas de " + req.query.search +"para descargar gratis en HD"
+								title: "Peliculas de " + req.query.search +" para descargar gratis en HD"
 						};
 
 
@@ -125,7 +125,7 @@ router.get("/", function(req, res){
 	}else{
 
 		let busqueda = tipoBusqueda("","");
-		obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados, "Películas para descargar gratis en HD");
+		obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados, "Peliculas para descargar gratis en HD");
 
 	}
 
@@ -143,7 +143,7 @@ router.get("/page/:page", function(req, res){
 
 	let busqueda = tipoBusqueda("","");
 
-	obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados, "Películas para descargar gratis en HD");
+	obtenerPeliculas(res, req, "", "", busqueda, page, num_page, num_por_page, count, sinResultados, "Peliculas para descargar gratis en HD");
 
 });
 

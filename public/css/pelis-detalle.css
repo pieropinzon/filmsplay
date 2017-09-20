@@ -43,3 +43,10 @@
     }
 
 }
+
+@media screen and (max-width: 415px){
+
+    #caja-principal{
+        width: 100%;
+    }
+}

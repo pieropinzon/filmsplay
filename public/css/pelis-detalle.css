@@ -28,6 +28,12 @@
     height: 100px;
 }
 
+@media screen and (max-width: 1350px){
+    #caja-principal{
+        width: 75%;
+    }
+}
+
 @media screen and (min-width: 663px) and (max-width: 991px){
 
     .caja-peli{

@@ -9,6 +9,7 @@ var path = require('path');
 var upload = multer({ dest: 'uploads/' }).single('portada');
 
 var fs = require("fs");
+var csv = require('fast-csv');
 
 var router = express.Router();
 
@@ -217,5 +218,6 @@ router.route('/peliculas/:id/enlaces')
             }
         });
     });
+
 
 module.exports = router;

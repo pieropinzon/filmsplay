@@ -165,6 +165,18 @@ router.get("/films/:titulo", function(req, res){
 		
 });
 
+// router.route('/peliculas/csv')
+//     .get(function(req,res){
+//         fs.createReadStream('public/archivos/prueba1.csv')
+//             .pipe(csv())
+//             .on('data', function(data){
+//                 console.log(data);
+//             })
+//             .on('end', function(data){
+//                 console.log('lectura finalizada');
+//             });
+//     });
+
 function tipoBusqueda(tipo, dato){
 	let busqueda;
 
